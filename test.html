@@ -128,7 +128,7 @@ for(var i = 0, l = props.length; i < l; i++) {
 }
 
 var xAngle = 0, yAngle = 0;
-$('body').keydown(function(evt) {
+$('body').keydown(function)(evt) {
     switch(evt.keyCode) {
         case 37: // left
             yAngle -= 90;
@@ -301,7 +301,7 @@ $(function(){
         return d;
     }();
 
-    $(document).keydown(function(evt) {
+    $(document).keydown(function)(evt) {
         switch(evt.keyCode)
         {
             case 37: // left
@@ -329,7 +329,7 @@ $(function(){
             default:
                 break;
         };
-    }).bind('mousedown touchstart', function(evt) {
+    }.bind('mousedown touchstart', function(evt) {
         delete mouse.last;
         if($(evt.target).is('a, iframe')) {
             return true;
