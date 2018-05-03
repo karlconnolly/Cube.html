@@ -3,7 +3,23 @@
   <link rel="icon" href="http://src.onlinedown.net/supply/pc/logo/2012116171653.jpg">
   
 <style>
-  
+    <head>
+    <title>Simple HTML5 Drawing App with Paint Bucket Tool</title>
+    <style>
+    	canvas {
+    		position: absolute;
+    	}
+    </style>
+  </head>
+  <body>
+    <div id="canvasDiv"></div>
+    <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+    <script type="text/javascript" src="drawing-app-with-bucket.js"></script>
+    <script type="text/javascript">
+    	 drawingApp.init();
+	</script>
+  </body>
+
   body { 
               background-color: #C8BFE7;
 	      text-align: center;
